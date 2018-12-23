@@ -1,12 +1,12 @@
 "use strict";
 var express = require("express"),
   bodyParser = require("body-parser"),
-  http = require("http"),
-  config = require("./config"),
+  // http = require("http"),
+  // config = require("./config"),
   server = express(),
-  mongoose = require("mongoose"),
-  TeamInfo = require("./API/Models/TeamInfo"), //created model loading here
-  GameSchedule = require("./API/Models/GameSchedule");
+  mongoose = require("mongoose");
+  // TeamInfo = require("./API/Models/TeamInfo"), //created model loading here
+  // GameSchedule = require("./API/Models/GameSchedule");
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 // mongoose.connect(config.dbUrl);
