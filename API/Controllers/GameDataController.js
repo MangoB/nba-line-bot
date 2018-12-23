@@ -39,14 +39,16 @@ function getTeamSchedule(req, res) {
   return res.json({
     speech:
       "Last game between Kings and " +
-      parameters.team +
+      // parameters.team +
+      "Portland" +
       " was played on " +
       "25/11/2561" +
       " ." +
       "Kings won this match by 120 - 119",
     displayText:
       "Last game between Kings and " +
-      parameters.team +
+      // parameters.team +
+      "Portland" +
       " was played on " +
       "25/11/2561" +
       " ." +
