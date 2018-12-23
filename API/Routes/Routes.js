@@ -8,8 +8,8 @@ module.exports = function(app) {
   });
   // registerUser Route
   // app.route("/").post(gameDataController.processRequest);
-  app.route("/").post(
-    res.json({
+  app.post("/", function(req, res) {
+    res.send({
       speech:
         "Last game between Kings and " +
         parameters.team +
@@ -26,5 +26,5 @@ module.exports = function(app) {
         "Kings won this match by 120 - 119",
       source: "game schedule"
     })
-  );
+  })
 };
